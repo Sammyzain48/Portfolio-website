@@ -1,3 +1,83 @@
-body {
-    font-size: 15pt;
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bgColor: #080808;
+  --bgColor-two: #001005;
+  --textColor: white;
+  --accent: #00ff51;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  line-height: 1.5;
+  background: var(--bgColor);
+  color: var(--textColor);
+  font-weight: system-ui;
+}
+
+nav {
+  margin: 10px 25px;
+}
+
+nav, nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+  transition: all 1.5s ease-in-out;
+}
+
+nav ul li:hover {
+  color: var(--accent);
+  transform: scale(1.5);
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: var(--textColor);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+nav ul li a:hover {
+  color: var(--accent);
+}
+
+/* hero section */
+
+.hero {
+  margin: 10% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid green;
+  position: relative;
+}
+
+.hero-text {
+  padding: 20px 15px;
+}
+
+.hero-text {
+  flex-basis: 250px;
+}
+
+.hero-image {
+  width: 100px;
+  height: 100px;
+  background: green;
 }
